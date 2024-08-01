@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap icon css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- media css -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader section starts -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- loader section ends -->
+
+    <!-- header section starts -->
+    <header class="header-sect">
+        <div class="container-fluid flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="./assets/images/final-logo-removebg-preview.png" alt="">
+            </div>
+            <nav class="navbar">
+                <ul class="flex gap">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./resume.html">Resume</a>
+                    </li>
+                    <li>
+                        <a href="./services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html" id="home1">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <ul class="flex gap-3 align-items-center justify-content-center">
+                    <li>
+                        <a class="twitter"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/shreya.anjan?mibextid=LQQJ4d&rdid=IGKS960UezW54h1v&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FYmQoBR4R5r6SP2ta%2F%3Fmibextid%3DLQQJ4d" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/shreya_anjan/?igsh=MXBqZml6ZGtqbHRqNg%3D%3D&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shreya-anjan-846ba231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);"><i class="bi bi-list menu"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- responsive header section starts -->
+    <div class="navi-head">
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+            <li>
+                <a href="./resume.html">Resume</a>
+            </li>
+            <li>
+                <a href="./services.html">Services</a>
+            </li>
+            <li>
+                <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="./blog.html" id="home2">Blog</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>    
+    </div>
+    <!-- responsive header section starts -->
+
+    <!-- blog-2 section starts -->
+    <section class="blog-2-sect">
+        <div class="container">
+            <div class="section-title">
+                <h3>Mastering Responsive Web Design: How to Use CSS Grid and Flexbox Together</h3>
+                <p><strong>Responsive web design</strong> ensures that your website looks and functions well across various devices and screen sizes. CSS Grid and Flexbox are two powerful layout systems in CSS that can help you achieve responsive designs effectively. Here’s a detailed explanation of how to use them together:</p>
+            </div>
+            <div class="step-1">
+                <h3><strong>1. Understanding CSS Grid</strong></h3>
+                <p><strong>CSS Grid</strong> is a two-dimensional layout system, meaning it handles both rows and columns simultaneously. It’s ideal for creating complex grid-based layouts.</p>
+                <p>Key Concepts:</p>
+                <ul>
+                    <li>
+                        <strong>Grid Container:</strong> The element with <code>'display: grid;'</code> is the grid container.
+                    </li>
+                    <li>
+                        <strong>Grid Items:</strong> Direct children of the grid container become grid items.
+                    </li>
+                    <li>
+                        <strong>Grid Lines:</strong>  Lines that define the boundaries between columns and rows.
+                    </li>
+                    <li>
+                        <strong>Grid Areas:</strong>  Sections of the grid defined by the intersection of columns and rows.
+                    </li>
+                </ul>
+                <p><strong>Basic Syntax:</strong></p>
+                <img src="./assets/images/blog-2-1.PNG" alt="" class="img-fluid">
+                <p><strong>Example:</strong></p>
+                <img src="./assets/images/blog-2-2.PNG" alt="" class="img-fluid">
+                <p><strong>CSS:</strong></p>
+                <img src="./assets/images/blog-2-3.PNG" alt="" class="img-fluid">
+            </div>
+            <div class="step-1">
+                <h3><strong>2. Understanding Flexbox</strong></h3>
+                <p><strong>Flexbox</strong> is a one-dimensional layout system that deals with items in a single direction—either row or column. It’s great for aligning items and distributing space within a container.</p>
+                <p>Key Concepts:</p>
+                <ul>
+                    <li>
+                        <strong>Flex Container:</strong> The element with <code>'display: flex;'</code> or <code>'display: inline-flex'</code> is the flex container.
+                    </li>
+                    <li>
+                        <strong>Flex Items:</strong> Direct children of the flex container are flex items.
+                    </li>
+                    <li>
+                        <strong>Flex Direction:</strong> Determines the direction of the flex items (row or column).
+                    </li>
+                    <li>
+                        <strong>Justify Content:</strong> Aligns items along the main axis.
+                    </li>
+                    <li>
+                        <strong>Align Items:</strong> Aligns items along the cross axis.
+                    </li>
+                </ul>
+                <p><strong>Basic Syntax:</strong></p>
+                <img src="./assets/images/blog-2-4.PNG" alt="" class="img-fluid">
+                <p><strong>Example:</strong></p>
+                <img src="./assets/images/blog-2-5.PNG" alt="" class="img-fluid">
+                <p><strong>CSS:</strong></p>
+                <img src="./assets/images/blog-2-6.PNG" alt="" class="img-fluid">
+            </div>
+            <div class="step-1">
+                <h3><strong>3. Combining CSS Grid and Flexbox</strong></h3>
+                <p>Combining CSS Grid and Flexbox leverages the strengths of both layout systems. Here’s how you can use them together effectively:</p>
+                <h4><strong>Layout with Grid, Alignment with Flexbox</strong></h4>
+                <ul>
+                    <li>
+                        <strong>Grid for Layout Structure:</strong> 
+                        Use CSS Grid to define the overall structure of the page or section.
+                    </li>
+                    <li>
+                        <strong>Flexbox for Item Alignment:</strong> 
+                        Within each grid cell or area, use Flexbox to align and distribute content.
+                    </li>
+                </ul>
+                <p><strong>Example:</strong></p>
+                <img src="./assets/images/blog-2-7.PNG" alt="" class="img-fluid">
+                <p><strong>CSS:</strong></p>
+                <img src="./assets/images/blog-2-8.PNG" alt="" class="img-fluid">
+            </div>
+            <div class="step-1">
+                <h3><strong>4. Responsive Adjustments</strong></h3>
+                <p>Both CSS Grid and Flexbox are inherently responsive. You can use media queries to adjust layouts for different screen sizes.</p>
+                <p><strong>Example:</strong></p>
+                <img src="./assets/images/blog-2-9.PNG" alt="" class="img-fluid">
+                <p><strong>How It Works:</strong></p>
+                <ul>
+                    <li>
+                        <strong>Grid Layout:</strong>
+                        Adjust the number of columns based on screen size.
+                    </li>
+                    <li>
+                        <strong>Flexbox Alignment:</strong>
+                        Change the direction of flex items or adjust spacing for smaller screens.
+                    </li>
+                </ul>
+                <h3><strong>5. Practical Tips</strong></h3>
+                <ol>
+                    <li>
+                        <strong>Use Grid for Structure:</strong>
+                        Utilize CSS Grid for large, complex layouts where precise control is needed.
+                    </li>
+                    <li>
+                        <strong>Use Flexbox for Alignment:</strong>
+                        Employ Flexbox for aligning items within a grid cell or for simpler layouts.
+                    </li>
+                    <li>
+                        <strong>Test Across Devices:</strong>
+                        Always test your design on various devices and screen sizes to ensure it looks and functions as intended.
+                    </li>
+                    <li>
+                        <strong>Avoid Overcomplication:</strong>
+                        Use Grid and Flexbox where they provide the most benefit. Overcomplicating layouts can lead to maintenance challenges.
+                    </li>
+                </ol>
+                <p>By understanding and applying CSS Grid and Flexbox together, you can create sophisticated and responsive designs that adapt beautifully to different devices and screen sizes.</p>
+        </div>
+    </section>
+    <!-- blog-2 section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer-sect">
+        <div class="container">
+            <div class="social-media-link">
+                <ul class="flex gap-3 justify-content-center">
+                    <li>
+                        <a class="twitter"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/shreya.anjan?mibextid=LQQJ4d&rdid=IGKS960UezW54h1v&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FYmQoBR4R5r6SP2ta%2F%3Fmibextid%3DLQQJ4d" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/shreya_anjan/?igsh=MXBqZml6ZGtqbHRqNg%3D%3D&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shreya-anjan-846ba231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $(".preloader").fadeOut(2000);
+        });
+        $(document).ready(function () {
+            $(".menu").on('click', function () {
+                $(".navi-head").fadeToggle()
+            })
+            $(".menu").on('click', function (){
+                $(this).toggleClass("bi-x bi-list")
+            })
+        })
+    </script>
+</body>
