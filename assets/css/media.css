@@ -1,0 +1,22 @@
+@media (max-width:992px) {
+
+    
+    .menu{
+        display: block !important;
+    }
+    .navbar{
+        display: none;
+    }
+}
+
+@media (max-width:576px){
+    .header-sect .social-links ul{
+        flex-wrap: nowrap;
+    }
+
+    .header-sect .container-fluid{
+        flex-wrap: nowrap;
+    }
+    
+}
+

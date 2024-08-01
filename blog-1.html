@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap icon css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- media css -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader section starts -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- loader section ends -->
+
+    <!-- header section starts -->
+    <header class="header-sect">
+        <div class="container-fluid flex justify-content-between align-items-center">
+            <div class="logo" >
+                <img src="./assets/images/final-logo-removebg-preview.png" alt="">
+            </div>
+            <nav class="navbar">
+                <ul class="flex gap">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./resume.html">Resume</a>
+                    </li>
+                    <li>
+                        <a href="./services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html" id="home1">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <ul class="flex gap-3 align-items-center justify-content-center">
+                    <li>
+                        <a class="twitter"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/shreya.anjan?mibextid=LQQJ4d&rdid=IGKS960UezW54h1v&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FYmQoBR4R5r6SP2ta%2F%3Fmibextid%3DLQQJ4d" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/shreya_anjan/?igsh=MXBqZml6ZGtqbHRqNg%3D%3D&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shreya-anjan-846ba231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);"><i class="bi bi-list menu"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- responsive header section starts -->
+    <div class="navi-head">
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+            <li>
+                <a href="./resume.html">Resume</a>
+            </li>
+            <li>
+                <a href="./services.html">Services</a>
+            </li>
+            <li>
+                <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="./blog.html" id="home2">Blog</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>    
+    </div>
+    <!-- responsive header section starts -->
+
+    <!-- blog-1 section starts -->
+    <section class="blog-1-sect">
+        <div class="container">
+            <div class="section-title">
+                <h2>Building Custom jQuery Plugins: A Step-by-Step Guide</h2>
+                <h3>Introduction</h3>
+                <p>jQuery plugins allow you to extend the capabilities of jQuery and reuse code across multiple projects. By creating your own plugin, you can encapsulate functionality in a modular way, making it easier to maintain and share.</p>
+            </div>
+            <div class="step-1">
+                <h3><strong>Step 1: Set Up Your Development Environment</strong></h3>
+                <ol>
+                    <li>
+                        <p><strong>Create Your Project Folder</strong></p>
+                        <ul>
+                            <li>Start by creating a new project folder where you will develop and test your plugin. For example, <strong>'custom-jquery-plugin'</strong></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Set Up HTML and jQuery</strong></p>
+                        <ul>
+                            <li>Create a basic HTML file to test your plugin. Include jQuery by linking to a CDN or local file.</li>
+                        </ul>
+                        <img src="./assets/images/blog-1-1.PNG" alt="" class="img-fluid">
+                    </li>
+                </ol>
+            </div>
+            <div class="step-1">
+                <h3><strong>Step 2: Define the Plugin Structure</strong></h3>
+                <ol>
+                    <li>
+                        <p><strong>Create the Plugin File</strong></p>
+                        <ul>
+                            <li>In your project folder, create a new JavaScript file, e.g., <strong>'your-plugin-name.js'</strong></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Basic Plugin Structure</strong></p>
+                        <ul>
+                            <li>Use the jQuery plugin format to define your plugin. Here’s a simple template to get you started:</li>
+                        </ul>
+                        <img src="./assets/images/blog-1-2.PNG" alt="" class="img-fluid">
+                        <ul>
+                            <li><strong>Explanation:</strong></li>
+                            <ul>
+                                <li>
+                                    <strong>Self-Executing Anonymous Function:</strong> <code>'(function($) { ... })(jQuery);'</code>
+                                      ensures that <code>$</code> refers to jQuery and avoids conflicts with other libraries.
+                                </li>
+                                <li>
+                                    <strong>' .fn.yourPluginName':</strong> Adds a new method to jQuery's prototype.
+                                </li>
+                                <li>
+                                    <strong>' $.extend':</strong> Merges user-provided options with defaults.
+                                </li>
+                                <li>
+                                    <strong>' return this.each(...)':</strong> Ensures that the plugin works on each element in the jQuery collection.
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="step-1">
+                <h3><strong>Step 3: Implement Plugin Functionality</strong></h3>
+                <ol>
+                    <li>
+                        <p><strong>Define Plugin Features</strong></p>
+                        <ul>
+                            <li>Depending on what your plugin does, implement the desired functionality inside the <code>'each'</code> loop. For example, if your plugin should change the text color:</li>
+                        </ul>
+                        <img src="./assets/images/blog-1-3.PNG" alt="" class="img-fluid">
+                    </li>
+                    <li>
+                        <p><strong>Test the Plugin</strong></p>
+                        <ul>
+                            <li>Include your plugin in your HTML file and initialize it with different options to ensure it works as expected.</li>
+                        </ul>
+                        <img src="./assets/images/blog-1-4.PNG" alt="" class="img-fluid">
+                    </li>
+                </ol>
+            </div>
+            <div class="step-1">
+                <h3><strong>Step 4: Enhance Your Plugin</strong></h3>
+                <ol>
+                    <li>
+                        <p><strong>Add More Options</strong></p>
+                        <ul>
+                            <li>Expand your plugin by adding more configurable options and functionality. For example:</li>
+                        </ul>
+                        <img src="./assets/images/blog-1-5.PNG" alt="" class="img-fluid">
+                    </li>
+                    <li>
+                        <p><strong>Handle Plugin Cleanup</strong></p>
+                        <ul>
+                            <li>If your plugin manipulates the DOM, make sure to provide a method for cleaning up resources or restoring original states.</li>
+                        </ul>
+                        <img src="./assets/images/blog-1-6.PNG" alt="" class="img-fluid">
+                    </li>
+                </ol>
+            </div>
+            <div class="step-1">
+                <h3><strong>Step 5: Document and Share Your Plugin</strong></h3>
+                <li>
+                    <p><strong>Create Documentation</strong></p>
+                    <ul>
+                        <li>Write clear documentation on how to use your plugin, including options, methods, and examples. You can include this in your project’s README file.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Publish Your Plugin</strong></p>
+                    <ul>
+                        <li>Share your plugin with the community by publishing it on platforms like GitHub, or npm. You can also write a blog post or create a tutorial to showcase your plugin.</li>
+                    </ul>
+                </li>
+            </div>
+            <div class="conclusion">
+                <h3><strong>Conclusion</strong></h3>
+                <p>Creating custom jQuery plugins allows you to extend jQuery’s functionality and create reusable, modular code.</p>
+            </div>
+        </div>
+    </section>
+    <!-- blog-1 section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer-sect">
+        <div class="container">
+            <div class="social-media-link">
+                <ul class="flex gap-3 justify-content-center">
+                    <li>
+                        <a class="twitter"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/shreya.anjan?mibextid=LQQJ4d&rdid=IGKS960UezW54h1v&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FYmQoBR4R5r6SP2ta%2F%3Fmibextid%3DLQQJ4d" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/shreya_anjan/?igsh=MXBqZml6ZGtqbHRqNg%3D%3D&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shreya-anjan-846ba231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $(".preloader").fadeOut(2000);
+        });
+        $(document).ready(function () {
+            $(".menu").on('click', function () {
+                $(".navi-head").fadeToggle()
+            })
+            $(".menu").on('click', function (){
+                $(this).toggleClass("bi-x bi-list")
+            })
+        })
+    </script>
+</body>
+
+</html>
