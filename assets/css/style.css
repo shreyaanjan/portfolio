@@ -403,7 +403,7 @@ html {
 
 .icon-box p {
     color: #444444;
-    text-align: center;
+    /* text-align: center; */
     font-size: 14px;
 }
 
