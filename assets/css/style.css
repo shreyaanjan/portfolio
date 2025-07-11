@@ -873,3 +873,7 @@ p {
 .social-media-link ul li i:hover {
     color: #34b7a7;
 }
+
+.mt{
+    margin-block-start: 60px;
+}
